@@ -9,7 +9,7 @@
   <img src="docs/python.gif" alt="Driver Management Demo" width="1200" height="600">
 </p>
 
-> **Driver Management** is a lightweight desktop application that lets you **register, identify and manage drivers** using real‑time face recognition and an intuitive CustomTkinter interface.
+> **Driver Management** is a smart and reactive desktop application designed for **real-time driver registration, monitoring, and alerting**, equipped with **face and eye state detection**. Built with an elegant CustomTkinter interface and OpenCV.
 
 ---
 
@@ -18,6 +18,9 @@
 |  | Capability |
 |:--|:--|
 | 👁️ **Face Recognition Login** | Launch the *Start* button to invoke `Sources/face.py`, which authenticates drivers against their stored portraits. |
+| 💤 **Eye State Monitoring** | Continuously checks if the driver's eyes are closed. If so, starts a countdown and alerts them using **voice and buzzer sounds**. |
+| 🔊 **Fatigue Alert System** | Sends **audible warnings** and a **sharp wake-up tone** if drowsiness is detected for a critical duration. |
+| 📤 **Emergency Contact Messaging** | Sends warning messages using the registered driver's contact details when inattention is detected. |
 | ➕ **One‑Click Enrollment** | Capture a driver’s photo from your webcam, enter basic contact info, and save—no command line needed. |
 | 🗑️ **Safe Removal** | Delete both the portrait and JSON record in a single action, with confirmation dialogs. |
 | 🔄 **Dynamic List View** | Refresh the driver list instantly to reflect new additions or removals. |
@@ -82,7 +85,7 @@ $ python main.py
 4. Hit **“Save”** — the portrait lands in `Sources/faceData/NAME.png`, while contact info is appended to `driverData.json`.
 5. To **remove** a driver, select their name, then **“Delete Driver”** (with safety checks).
 6. **Refresh** at any time to reload the on‑disk list.
-7. Back on the home screen, **“Start”** spins up `face.py` to begin live recognition & monitoring.
+7. Back on the home screen, **“Start”** spins up `face.py` to begin live recognition, **eye monitoring**, and **real-time alerting** if needed.
 
 ---
 
@@ -134,13 +137,9 @@ Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for more informa
 
 ---
 
-## 🙏 Acknowledgements
-
-- [CustomTkinter](https://github.com/TomSchimansky/CustomTkinter) — modern Tkinter widgets
-- [OpenCV](https://opencv.org/) — real‑time computer vision
-- [Pillow](https://python-pillow.org/) — image handling
-- [CTkMessagebox](https://github.com/Akascape/CTkMessagebox) — nicer dialogs
+## ✨ Developed With Precision By
 
 <p align="center">
-  Made with ❤️ & ☕ by **VV / KUZEY**
+  <strong style="font-size: 1.3em; letter-spacing: 1px;">⚡ VV / KUZEY ⚡</strong><br>
+  <em>Blending computer vision & UI into real-world safety systems.</em>
 </p>
