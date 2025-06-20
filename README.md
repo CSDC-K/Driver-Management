@@ -4,7 +4,10 @@
 ![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge)
 ![Platform: Windows](https://img.shields.io/badge/Platform-Windows%2010%2B-00adee?style=for-the-badge&logo=windows)
 ![UI: CustomTkinter](https://img.shields.io/badge/UI-CustomTkinter-ff69b4?style=for-the-badge)
-![Status: Alpha](https://img.shields.io/badge/Status-Alpha-orange?style=for-the-badge)
+
+<p align="center">
+  <img src="docs/python.gif" alt="Driver Management Demo" width="1200" height="600">
+</p>
 
 > **Driver Management** is a lightweight desktop application that lets you **register, identify and manage drivers** using real‑time face recognition and an intuitive CustomTkinter interface.
 
@@ -23,18 +26,6 @@
 
 ---
 
-## 📸 Demo
->
-> ```bash
-> python main.py
-> ```
-
-<p align="center">
-  <img src="docs/python.gif" alt="Driver Management demo" width="600">
-</p>
-
----
-
 ## 🗂️ Project Layout
 
 ```text
@@ -47,6 +38,9 @@ Driver-Management/
 │   ├── driverData/
 │   │   └── driverData.json # Contact info store
 │   └── Icons/              # UI icons (phone.png, mail.png, user.png, api.png)
+├── docs/
+│   └── python.gif          # Demonstration visual
+├── requirements.txt        # Dependency list
 └── LICENSE
 ```
 
@@ -57,7 +51,7 @@ Driver-Management/
 ### Prerequisites
 
 * Windows 10/11
-* Python **3.10+** (3.11 OK)
+* Python **3.10+**
 * Webcam & OpenCV‑compatible camera driver
 
 ### Installation
@@ -72,16 +66,11 @@ $ python -m venv .venv
 $ .\.venv\Scripts\activate
 
 # 3. Install dependencies
-$ pip install -r requirements.txt  # see below if the file is missing
+$ pip install -r requirements.txt
 
 # 4. Launch
 $ python main.py
 ```
-
-> **Tip:** If `requirements.txt` is not yet committed, install these core packages:
-> ```bash
-> pip install customtkinter opencv-python pillow CTkMessagebox
-> ```
 
 ---
 
@@ -94,6 +83,25 @@ $ python main.py
 5. To **remove** a driver, select their name, then **“Delete Driver”** (with safety checks).
 6. **Refresh** at any time to reload the on‑disk list.
 7. Back on the home screen, **“Start”** spins up `face.py` to begin live recognition & monitoring.
+
+---
+
+## 🧾 Requirements
+
+Dependencies are listed in [`requirements.txt`](requirements.txt). It includes:
+
+```text
+customtkinter
+opencv-python
+pillow
+CTkMessagebox
+```
+
+Install them all using:
+
+```bash
+pip install -r requirements.txt
+```
 
 ---
 
