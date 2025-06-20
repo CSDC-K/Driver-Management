@@ -24,15 +24,13 @@
 ---
 
 ## 📸 Demo
-
-> Replace the placeholder below with your own screenshot or GIF (e.g. `docs/assets/demo.gif`).
 >
 > ```bash
 > python main.py
 > ```
 
 <p align="center">
-  <img src="docs/assets/demo.gif" alt="Driver Management demo" width="600">
+  <img src="docs/python.gif" alt="Driver Management demo" width="600">
 </p>
 
 ---
