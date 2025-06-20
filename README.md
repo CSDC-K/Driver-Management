@@ -6,7 +6,7 @@
 ![UI: CustomTkinter](https://img.shields.io/badge/UI-CustomTkinter-ff69b4?style=for-the-badge)
 
 <p align="center">
-  <img src="docs/python.gif" alt="Driver Management Demo" width="1200" height="628">
+  <img src="docs/python.gif" alt="Driver Management Demo" width="1000" height="628">
 </p>
 
 > **Driver Management** is a smart and reactive desktop application designed for **real-time driver registration, monitoring, and alerting**, equipped with **face and eye state detection**. Built with an elegant CustomTkinter interface and OpenCV.
